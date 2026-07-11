@@ -55,6 +55,8 @@
 | SCL      | GPIO 4        |
 | SDA      | GPIO 5        |
 
+![实物](images/OBJ.jpg)
+
 > ⚠️ **注意**：请使用 3.3V 供电，勿接 5V！连接前断开所有电源。
 
 ---
@@ -173,6 +175,9 @@ idf.py -p /dev/cu.usbmodemXXXX flash
 - 可视化编辑 `script.json`（图形化步骤编辑器，支持分辨率设置、抖动参数、拖拽排序）
 - 上传/下载配置文件
 - 修改 Wi‑Fi 密码（保存后设备自动重启）
+
+![网页](images/web.jpg)
+![规则编辑](images/rule.jpg)
 
 ---
 
