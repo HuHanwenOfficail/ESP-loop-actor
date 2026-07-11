@@ -1,0 +1,16 @@
+# ESP-IDF 编译输出
+build/
+managed_components/
+dependencies.lock
+
+# sdkconfig 由 menuconfig 生成，但保留默认配置文件
+sdkconfig
+sdkconfig.old
+
+# 编辑器临时文件
+.vscode/
+*.swp
+*~
+
+# macOS
+.DS_Store

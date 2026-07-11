@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "name": "全功能测试",
+    "version": "2.0",
+    "base_resolution": { "width": 1920, "height": 1080 },
+    "default_pre_delay_ms": 20,
+    "default_post_delay_ms": 100,
+    "loop": {
+      "enabled": true,
+      "reset_position": { "x": -10, "y": -10 },
+      "reset_position_after_each_loop": true
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "ui_hint": "抖动移动至400,300",
+      "action": {
+        "type": "mouse_move",
+        "x": 400,
+        "y": 300,
+        "jitter_enabled": true,
+        "jitter_strength": 12,
+        "h_min": -15, "h_max": 15,
+        "v_min": -10, "v_max": 10
+      }
+    },
+    {
+      "id": 2,
+      "ui_hint": "左键双击",
+      "action": { "type": "mouse_click", "button": "LEFT", "click_type": "DOUBLE_CLICK" }
+    },
+    {
+      "id": 3,
+      "ui_hint": "从文件输入(随机延迟)",
+      "action": {
+        "type": "keyboard_input",
+        "input_mode": "file",
+        "line_index": "AUTO_INCREMENT",
+        "random_delay_min_ms": 50,
+        "random_delay_max_ms": 120
+      },
+      "post_delay_ms": 200
+    },
+    {
+      "id": 4,
+      "ui_hint": "按回车",
+      "action": { "type": "keyboard_input", "input_mode": "literal", "literal_text": "\n" }
+    },
+    {
+      "id": 5,
+      "ui_hint": "拖拽至800,600",
+      "action": {
+        "type": "mouse_drag",
+        "start": { "x": 400, "y": 300 },
+        "end": { "x": 800, "y": 600 },
+        "button": "LEFT"
+      }
+    },
+    {
+      "id": 6,
+      "ui_hint": "Ctrl+C 复制",
+      "action": {
+        "type": "keyboard_hotkey",
+        "modifiers": ["CTRL"],
+        "key": "C"
+      }
+    },
+    {
+      "id": 7,
+      "ui_hint": "纯延时1秒",
+      "action": { "type": "wait", "duration_ms": 1000 }
+    },
+    {
+      "id": 8,
+      "ui_hint": "输入固定文本",
+      "action": {
+        "type": "keyboard_input",
+        "input_mode": "literal",
+        "literal_text": "Done!",
+        "random_delay_min_ms": 20,
+        "random_delay_max_ms": 60
+      }
+    }
+  ]
+}
