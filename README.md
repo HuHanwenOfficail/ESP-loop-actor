@@ -173,8 +173,8 @@ idf.py -p /dev/cu.usbmodemXXXX flash
 - 上传/下载配置文件
 - 修改 Wi‑Fi 密码（保存后设备自动重启）
 
-![网页](images/web.jpg)
-![规则编辑](images/rule.jpg)
+![网页](images/web.png)
+![规则编辑](images/rule.png)
 
 ---
 
