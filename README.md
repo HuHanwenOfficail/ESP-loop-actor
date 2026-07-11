@@ -1,6 +1,3 @@
-下面是适合你项目的完整 `README.md` 文件内容，包含项目简介、功能特性、硬件接线、快速开始、按钮规则、JSON 配置指南、Web 管理说明和许可证信息。你可以直接将它复制到项目根目录的 `README.md` 中，并提交到 GitHub。
-
-```markdown
 # ESP-Loop-Actor
 
 > 基于 ESP32-S3 的免编程 USB HID 自动化设备  
